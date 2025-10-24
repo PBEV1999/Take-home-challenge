@@ -1,73 +1,87 @@
-#  Mercado Libre - Test Automation 
+# Mercado Libre - Test Automation
 
-##  SitioWeb
+## Sitio Web
 [https://www.mercadolibre.com](https://www.mercadolibre.com)
 
-##  Lenguaje
+## Lenguaje
 Java 17
 
-##  Framework
+## Framework
 Selenium WebDriver + TestNG + Allure Report
 
 ---
 
-##  Descripcion
+## Descripción
 
-1. Enter the website
-2. Select **México** as the country
-3. Search for the term **“Playstation 5”**
-4. Filter by condition **“Nuevos”**
-5. Filter by location **“CDMX”**// no es algo que actualmente se puede filtrar
-6. Order results by **“Mayor a menor precio”**
-7. Obtain the **name and price** of the first **5 products**
-8. Print the results in the console
-9. Generate a report with screenshots for each step
+1. Entrar al sitio web.
+2. Seleccionar **México** como país.
+3. Buscar el término **“Playstation 5”**.
+4. Filtrar por condición **“Nuevos”**.
+5. Filtrar por ubicación **“CDMX”** *(actualmente no disponible)*.
+6. Ordenar los resultados por **“Mayor a menor precio”**.
+7. Obtener el **nombre y precio** de los primeros **5 productos**.
+8. Imprimir los resultados en la consola.
+9. Generar un **reporte con capturas** de cada paso.
 
 ---
 
-##  Como correr el programa
+## Cómo correr el programa
 
 ### Requerimientos
-- Java 17 or higher
-- Maven installed
-- Google Chrome and ChromeDriver (matching version)
+- Java 17 o superior
+- Maven instalado
+- Google Chrome y ChromeDriver (versión compatible)
+
+---
 
 ### Pasos a ejecutar
 
-1.Clonar el repositorio:
-   ```bash
-   git clone https://github.com/<your_user>/TestAutomation.git
-   cd TestAutomation
+#### 1️⃣ Clonar el repositorio:
+```bash
+git clone https://github.com/PBEV1999/TestAutomation.git
+cd TestAutomation
+```
+---
 
--> 🧩 **Nota:**
-> Si las dependencias de **Maven** no se descargan automáticamente después de clonar el proyecto, sigue estos pasos:
->
-> 1. En **IntelliJ IDEA**, abre el panel de **Maven** (ubicado generalmente en el lado derecho del IDE).
-> 2. Da clic en el ícono **Reload All Maven Projects** 🔄 (las flechas circulares azules).
-> 3. Espera a que todas las dependencias se descarguen y finalice el proceso de construcción.
->
-> También puedes hacerlo desde la terminal con el siguiente comando:
-> ```bash
-> mvn clean install -U
-> ```
-> El parámetro `-U` fuerza a Maven a **actualizar todas las dependencias** desde los repositorios remotos, asegurando que el proyecto se ejecute correctamente.
+### 🧩 Nota importante:
 
-2.Correr el  test suite:
+Si las dependencias de Maven no se descargan automáticamente después de clonar el proyecto, sigue estos pasos:
 
+En IntelliJ IDEA, abre el panel de Maven (generalmente en el lado derecho del IDE).
+
+Haz clic en el ícono Reload All Maven Projects 🔄 (las flechas circulares azules).
+
+Espera a que las dependencias se descarguen completamente.
+
+También puedes hacerlo desde la terminal:
+```bash
+mvn clean install -U
+```
+
+El parámetro -U fuerza a Maven a actualizar todas las dependencias desde los repositorios remotos.
+
+#### 2️⃣ Ejecutar el test suite:
+```bash
 mvn test
+```
 
-3.Genrar el  Allure Report:
-
+#### 3️⃣ Generar el reporte de Allure:
+```bash
 allure serve allure-results
-
-
-Ejemplo de resultado esperado.
+```
+---
+#### Ejemplo de resultado esperado
 
 Total de productos encontrados: 50
+
 Primeros 5 productos:
 
-1. Sony Playstation 5 Digital Edición 30° Aniversario - $18,999 (5% OFF)
-2. Playstation 5 Slim Edition 30 Aniversario - $24,000
-3. Sony Playstation 5 Pro 2024 - $20,000
-4. Playstation 5 Slim 1TB + Lector de Discos - $21,702
-5. Playstation 5 Edición Limitada 30° Aniversario - $18,333
+Sony Playstation 5 Digital Edición 30° Aniversario - $18,999 (5% OFF)
+
+Playstation 5 Slim Edition 30° Aniversario - $24,000
+
+Sony Playstation 5 Pro 2024 - $20,000
+
+Playstation 5 Slim 1TB + Lector de Discos - $21,702
+
+Playstation 5 Edición Limitada 30° Aniversario - $18,333
