@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MercadoLibre Suite">
+    <test name="BusquedaPS5">
+        <classes>
+            <class name="TestAutomation"/>
+
+        </classes>
+    </test>
+</suite>

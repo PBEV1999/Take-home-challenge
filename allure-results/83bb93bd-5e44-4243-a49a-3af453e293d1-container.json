@@ -1,0 +1,1 @@
+{"uuid":"83bb93bd-5e44-4243-a49a-3af453e293d1","name":"MercadoLibre Suite","children":["3baf8e47-3ff8-4ec4-b6d2-7daa2c43575b"],"befores":[{"name":"limpiarAllureResults","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1761301147942,"stop":1761301147961}],"afters":[],"start":1761301147892,"stop":1761301171522}
