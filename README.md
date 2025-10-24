@@ -38,7 +38,7 @@ Selenium WebDriver + TestNG + Allure Report
 
 #### 1️⃣ Clonar el repositorio:
 ```bash
-git clone https://github.com/PBEV1999/TestAutomation.git
+git clone https://github.com/PBEV1999/Take-home-challenge.git
 cd TestAutomation
 ```
 ---
