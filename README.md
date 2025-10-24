@@ -13,10 +13,6 @@ Selenium WebDriver + TestNG + Allure Report
 
 ##  Descripcion
 
-This automation test simulates a user searching for **PlayStation 5** on Mercado Libre México, applying specific filters and printing the first 5 products with their names and prices.
-
-The flow follows exactly the steps requested in the **Take Home Challenge**:
-
 1. Enter the website
 2. Select **México** as the country
 3. Search for the term **“Playstation 5”**
